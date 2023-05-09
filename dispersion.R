@@ -1,0 +1,19 @@
+x<-read.csv(file.choose())
+print(x)
+n=c(x$SepalLengthCm)
+dlen=length(n)
+print(n)
+Max=max(n)
+Min=min(n)
+print(Max)
+print(Min)
+dRange=Max-Min
+#Range of the data
+print(dRange)
+dsort=sort(n)
+print(dsort)
+dsort[3]
+q3=dsort[(3*dlen)/4]
+q1=dsort[dlen/4]
+q=(q3-q1)/2
+print(q)
